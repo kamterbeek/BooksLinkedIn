@@ -51,3 +51,15 @@ LinkedIn
 
 ## Project Status
 
+In Progress
+
+Current milestone:
+
+- [ ] Build ETL pipeline
+- [ ] Import Goodreads exports
+- [ ] Create PostgreSQL schema
+- [ ] Detect new books
+- [ ] Generate AI summaries
+- [ ] Automate LinkedIn posting
+- [ ] Dockerize application
+
