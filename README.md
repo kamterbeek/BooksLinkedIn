@@ -39,3 +39,15 @@ LinkedIn
 ---
 
 ## Tech Stack
+
+- Python
+- PostgreSQL
+- Playwright
+- OpenAI API
+- GitHub Actions
+- Docker
+
+---
+
+## Project Status
+
