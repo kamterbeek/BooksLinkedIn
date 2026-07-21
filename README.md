@@ -16,3 +16,26 @@ Read2Linked is an end-to-end data engineering project that extracts reading data
 - Docker support
 
 ---
+
+## Architecture
+
+Goodreads
+        │
+        ▼
+Python ETL
+        │
+        ▼
+PostgreSQL
+        │
+        ▼
+OpenAI
+        │
+        ▼
+Playwright
+        │
+        ▼
+LinkedIn
+
+---
+
+## Tech Stack
