@@ -27,21 +27,22 @@ def load_books():
     books = []
 
     for _, row in df.iterrows():
-        book = Book(
-            book_id=row["Book Id"],
-            title=row["Title"],
-            author=row["Author"],
-            isbn=row.get("ISBN"),
-            isbn13=row.get("ISBN13"),
-            rating=row.get("My Rating"),
-            pages=row.get("Number of Pages"),
-            year_published=row.get("Year Published"),
-            date_added=row.get("Date Added"),
-            date_read=row.get("Date Read"),
-            shelf=row.get("Exclusive Shelf"),
-            review=row.get("Review"),
-        )
-        if validate_book(book):
+      
+      book = Book(
+    book_id=clean_value(row["Book Id"]),
+    title=clean_value(row["Title"]),
+    author=clean_value(row["Author"]),
+    isbn=clean_value(row["ISBN"]),
+    isbn13=clean_value(row["ISBN13"]),
+    rating=clean_value(row["My Rating"]),
+    pages=clean_value(row["Number of Pages"]),
+    year_published=clean_value(row["Year Published"]),
+    date_added=clean_value(row["Date Added"]),
+    date_read=clean_value(row["Date Read"]),
+    shelf=clean_value(row["Exclusive Shelf"]),
+    review=clean_value(row["My Review"]),
+)
+    if validate_book(book):
             books.append(book)
     return books
 
