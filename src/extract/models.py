@@ -1,7 +1,7 @@
-from pydantic import BaseModel, Field
+from pydantic import BaseModel
 from typing import Optional
 
-class book(BaseModel):
+class Book(BaseModel):
     book_id: int
     title: str
     author: str
