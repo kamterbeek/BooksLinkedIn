@@ -14,8 +14,11 @@ DATA_PATH = (
     / "goodreads_library_export.csv"
 )
 
+
 def load_books():
     df = pd.read_csv(DATA_PATH)
+
+    df = df.where(pd.notnull(df), None)
 
     books = []
 
@@ -43,5 +46,6 @@ if __name__ == "__main__":
     books = load_books()
 
     print(f"Loaded {len(books)} books.")
-
+    
+    print("Firest books:")
     print(books[0])
