@@ -41,7 +41,7 @@ LinkedIn
 ## Tech Stack
 
 - Python
-- PostgreSQL
+- Airtable
 - Playwright
 - OpenAI API
 - GitHub Actions
@@ -63,3 +63,34 @@ Current milestone:
 - [ ] Automate LinkedIn posting
 - [ ] Dockerize application
 
+
+   Goodreads CSV
+                      │
+                      ▼
+          Python Extract Service
+                      │
+                      ▼
+              Apache Kafka
+          (event: book.finished)
+                      │
+        ┌─────────────┴─────────────┐
+        ▼                           ▼
+    Airtable                  Cribl Stream
+        │                           │
+        ▼                           ▼
+   Operational Data          Observability
+                                      │
+                                      ▼
+                             AWS S3 (optional)
+                                      │
+                                      ▼
+                                   dbt Core
+                                      │
+                                      ▼
+                              Analytics Models
+                                      │
+                                      ▼
+                              AI Post Generator
+                                      │
+                                      ▼
+                              LinkedIn Automation
