@@ -44,7 +44,7 @@ def load_books():
                 shelf=clean_value(row["Exclusive Shelf"]),
                 review=clean_value(row["My Review"]),
             )
-
+            
             if validate_book(book):
                 books.append(book)
 
