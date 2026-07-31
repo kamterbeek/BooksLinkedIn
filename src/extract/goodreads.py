@@ -16,16 +16,6 @@ DATA_PATH = (
     / "goodreads_library_export.csv"
 )
 
-
-def clean_value(value):
-    """
-    Convert Pandas NaN values into Python None.
-    """
-    if pd.isna(value):
-        return None
-    return value
-
-
 def load_books():
     """
     Read the Goodreads export and convert each row into a Book object.
