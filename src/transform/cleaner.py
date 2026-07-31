@@ -26,4 +26,3 @@ def clean_int(value):
         return None
 
     return int(value)
-        return None
