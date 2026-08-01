@@ -76,4 +76,3 @@ if __name__ == "__main__":
         print(f"Row: {errors[0]['row']}")
         print(f"Title: {errors[0]['title']}")
         print(errors[0]["error"])
-
