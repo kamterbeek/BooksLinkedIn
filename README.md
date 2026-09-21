@@ -19,22 +19,15 @@ Read2Linked is an end-to-end data engineering project that extracts reading data
 
 ## Architecture
 
-Goodreads
-        │
-        ▼
-Python ETL
-        │
-        ▼
-PostgreSQL
-        │
-        ▼
-OpenAI
-        │
-        ▼
-Playwright
-        │
-        ▼
-LinkedIn
+raw data CSV
+Event streaming	Apache Kafka
+Operational/user-facing data	Airtable
+Raw cloud storage	AWS S3
+Data transformation/modeling	dbt
+Observability/log pipelines	Cribl
+Application logic	Python
+AI content generation	OpenAI API
+LinkedIn automation	Playwright
 
 ---
 
